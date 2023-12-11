@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haskel Foods</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+    function believersClass() {
+    // get all the inputs within the submitted form
+    var inputs = document.getElementsByTagName('input');
+    for (var i = 0; i < inputs.length; i++) {
+        // only validate the inputs that have the required attribute
+        if(inputs[i].hasAttribute("required")){
+            if(inputs[i].value == ""){
+                // found an empty field that is required
+                alert("Please fill all required fields");
+                return false;
+            }
+            else{
+                //location.href = 'https://acronyms.thefreedictionary.com/DFGG';
+            }
+           // 
+           // else alert('The Attendance for Today\'s believers class is successful')
+        }
+    }
+    return true;   
+    }
+    </script>
+</head>
+<body>
+    <header>
+        Purchase Form
+    </header>
+    <main>
+        <section class="believe__class">
+            <img src="/assets/img/Haske__Foods.jpg" alt="" class="Haske__logo">
+            <form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdts6FAgRAhyX_PPL99yZHrSnHBKRckZRA9b0zh86avCR9Dgg/formResponse">
+            <div class="class__input">
+                <label for="firstName"><span class="label__class">first name <span class="asterik">*</span></span> </label>
+                <input type="text" required class="inputText" name="entry.330865199" id="firstName">
+            </div>
+            <div class="class__input">
+                <label for="lastName"><span class="label__class">last name <span class="asterik">*</span> </span></label>
+                <input type="text" required class="inputText" name="entry.77492034" id="lastName">
+            </div>
+            <div class="class__input">
+                <label for="middleName"><span class="label__class">middle name <span class="asterik">*</span></span></label>
+                <input type="text" required class="inputText" name="entry.1750306486" id="middleName">
+            </div>
+            <div class="class__input">
+                <label for="teacherName"><span class="label__class">items name <span class="asterik">*</span></span></label>
+                <input type="text" required class="inputText" name="entry.990362696" id="teacherName">
+            </div>
+            <div class="class__input">
+                <label for="classCode"><span class="label__class">Purchase Descriptions <span class="asterik">*</span></span></label>
+                <textarea rows="7" cols="50" name="comment" class="inputTextArea" required name="entry.1613692111" required id="classCode"> 
+                </textarea>
+            </div>
+            <div class="btn__section">
+                <button type="submit" class="believe__btn" onclick="believersClass()">Process...</button>
+            </div>
+        </form>
+        </section>
+    </main>
+    <footer>
+        &copy; <span><a href="https://dthes-tekh.com/" target="_blank">DTHES-TEKH INSTITUTE 2023.</a></span>
+    </footer>
+</body>
+</html>

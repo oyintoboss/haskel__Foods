@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cadetblue;
+}
+
+header{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.believe__class{
+  display: grid;
+  justify-content: center;
+}
+
+.Haske__logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+label{
+    display: grid; 
+}
+
+.label__class{
+    color: teal;
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.class__input{
+    margin: 2rem 0;
+}
+
+.believe__btn{
+    color: greenyellow;
+    width: 14rem;
+    height: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.believe__btn:hover{
+    background-color: brown;
+    color: blue;
+    outline: none;
+}
+
+.btn__section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.inputText{
+    font-size: 2rem;
+    width: 100%;
+    height: 4rem;
+}
+
+.inputTextArea{
+    font-size: 2rem;
+    width: 100%;
+    height: 10rem;
+}
+
+.radio__class{
+    width: 3rem;
+    height: 3rem;
+}
+
+.radio__label{
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+/* asterik */
+.asterik{
+    color: red;
+}
+
